@@ -17,7 +17,7 @@ module x_bit_right_ari_shifter #(
   
   always {
     // assign value to shifted_bits[32] depending on the value of SHIFT
-        shifted_bits = c{SHIFTx{pad}, a[31-SHIFT:0]}
+        shifted_bits = c{SHIFTx{a[31]}, a[31-SHIFT:0]}
     // connect the selector of each mux_2 with shift 
         mux_32.s0 = 32x{shift}
     // use a repeat-loop to:
