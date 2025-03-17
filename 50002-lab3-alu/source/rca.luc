@@ -8,18 +8,17 @@ module rca #(
     output s[SIZE]
 ) {
     
-    fa fa[32]
+    fa fa[SIZE]
     
     always {
         // implement ripple-carry-adder logic here 
         
         fa.a = a
         fa.b = b
-        fa.cin = 0;
         
         repeat(i, SIZE){
             if (i == 0) {
-                fa.cin[0] = cin
+                fa.cin[i] = cin
             }
             else {
                 fa.cin[i] = fa.cout[i-1]
