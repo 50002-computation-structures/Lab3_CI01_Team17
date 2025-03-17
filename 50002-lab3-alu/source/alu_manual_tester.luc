@@ -124,9 +124,11 @@ module alu_manual_tester#(
                 current_value.d[1] = 1b0
                 current_value.d[3] = 1b0
             b1: 
+                current_value.d[1] = 1b1
                 current_value.d[3] = 1b1
-                current_value.d[3] = 1b1
-            default: current_value.d[0] = 1b0
+            default: 
+                current_value.d[1] = 1b0
+                current_value.d[3] = 1b0
         }
         
         case (alu.n) {
@@ -138,6 +140,10 @@ module alu_manual_tester#(
                 current_value.d[2] = 1b1
                 current_value.d[5] = 1b1
                 current_value.d[6] = 1b1
+            default:
+                current_value.d[2] = 1b0
+                current_value.d[5] = 1b0
+                current_value.d[6] = 1b0
         }
         
         decimal_renderer.value = current_value.q
