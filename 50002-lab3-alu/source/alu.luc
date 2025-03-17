@@ -9,7 +9,10 @@ module alu (
 ) {
     
     adder adder(#SIZE(32))
-    compare compare(.z(adder.z), .v(adder.v), .n(adder.n), .alufn(alufn))
+    compare compare()
+    boolean boolean()
+    shifter shifter()
+    multiplier multiplier()
     
     always {
         // implement alu logic here
@@ -17,10 +20,38 @@ module alu (
         adder.b = b;
         adder.alufn_signal = alufn;
         
+        boolean.a = a;
+        boolean.b = b;
+        boolean.alufn = alufn;
+        
+        compare.z = adder.z;
+        compare.v = adder.v;
+        compare.n = adder.n;
+        compare.alufn = alufn;
+        
+        shifter.a = a;
+        shifter.b = b;
+        shifter.alufn = alufn;
+        
+        multiplier.a = a;
+        multiplier.b = b;
+         
         z = adder.z;
         v = adder.v;
-        n = adder.n;    
+        n = adder.n;
         
-        out = adder.out;
+        case (alufn[5:4]) {
+            b00:
+                case(alufn[1]) {
+                    b0: out = adder.out
+                    b1: out = multiplier.mul
+                    default: out = 0
+                }
+            b01: out = boolean.bool
+            b10: out = shifter.shift
+            b11: out = compare.cmp
+            default: out = 0
+        }
+           
     }
 }
