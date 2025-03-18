@@ -1,7 +1,4 @@
-module alu_manual_tester#(
-    CLK_FREQ ~ 1000 : CLK_FREQ > 0
-    ) 
-(
+module alu_manual_tester (
     input clk,  // clock
     input rst,  // reset
     input io_button[5],
@@ -171,7 +168,7 @@ module alu_manual_tester#(
         io_led[2] = alu.out[23:16]
         led = alu.out[31:24]
         
-        
-            
+        // to remove
+        //io_led[0][4:0] = ~io_button
     }
 }
