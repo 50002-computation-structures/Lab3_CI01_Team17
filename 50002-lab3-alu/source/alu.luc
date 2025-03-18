@@ -5,9 +5,10 @@ module alu #(
     input b[SIZE],
     input alufn[6],
     output out[SIZE],
-    output z,
-    output v,
-    output n
+    output z,           // signals zero value output 
+    output v,           // signals overflow in specific cases
+    output n,           // signals negative output
+    output illop        // signals illegal op code
 ) {
     adder adder(#SIZE(SIZE))
     compare compare()
@@ -40,21 +41,52 @@ module alu #(
         divider.a = a
         divider.b = b
         
-        z = adder.z
-        v = adder.v
-        n = adder.n
+        // flags default to 0
+        z = 0
+        v = 0
+        n = 0
+        illop = 0
         
         case (alufn[5:4]) {
             b00:
-                case(alufn[1:0]) {
-                    b10: out = multiplier.mul
-                    b11: out = divider.d
-                    default: out = adder.out
+                case(alufn[3:0]) {
+                    b0000:
+                        temp_out = adder.out
+                        v = adder.v
+                    b0001:
+                        temp_out = adder.out
+                        v = adder.v
+                    b0010:
+                        temp_out = multiplier.mul
+                    b0011:
+                        temp_out = divider.d
+                    default:
+                        temp_out = 0
+                        illop = 1
                 }
-            b01: out = boolean.bool
-            b10: out = shifter.shift
-            b11: out = compare.cmp
-            default: out = 0
+                n = temp_out[SIZE-1]
+
+            b01:
+                temp_out = boolean.bool
+                illop = boolean.illop
+
+            b10:
+                temp_out = shifter.shift
+                //v = shifter.v
+                illop = shifter.illop
+
+            b11:
+                temp_out = compare.cmp
+                illop = compare.illop
+
+            default:
+                temp_out = 0
+                illop = 1
         }
+
+        // z flag also triggers for boolean outputs, 1 for true
+        z = ~| temp_out
+        n = temp_out[SIZE-1]
+        out = temp_out
     }
 }

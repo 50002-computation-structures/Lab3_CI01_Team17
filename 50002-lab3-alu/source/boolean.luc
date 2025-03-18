@@ -4,17 +4,22 @@ module boolean #(
     input a[SIZE],
     input b[SIZE],
     input alufn[6],
-    output bool[SIZE]
+    output bool[SIZE],
+    output illop
 ) {
     
-    
     always {
-        case (alufn[3:0]) {
-            b1000: bool = a & b
-            b1110: bool = a | b
-            b0110: bool = a ^ b
-            b1010: bool = a
-            default: bool = 0
+        // default no illegal operation
+        illop = 0
+
+        case (alufn[3:1]) {
+            b100: bool = a & b
+            b111: bool = a | b
+            b011: bool = a ^ b
+            b101: bool = a
+            default:
+                bool = 0
+                illop = 1
         }
         
     }

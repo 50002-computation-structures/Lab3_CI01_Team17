@@ -14,10 +14,10 @@ module alu_manual_tester (
 //    operations_rom or
 //    result_rom rr
     
-    sig bin1[32]
-    sig bin2[32]
-    sig op[6]
-    sig r[32]
+//    sig bin1[32]
+//    sig bin2[32]
+//    sig op[6]
+//    sig r[32]
     
     enum States {
         SET_A_LOW,
@@ -97,7 +97,7 @@ module alu_manual_tester (
 //                       states.d = States.AUTO
 //                }
             
-             States.COMPUTE:
+            States.COMPUTE:
                 // obtain the alu a value from its dff
             		alu.a = a_value.q
                 // obtain the alu b value from its dff
@@ -108,28 +108,31 @@ module alu_manual_tester (
                 if (io_button_edge.out[1]) { //if button 1 is pressed down
                     // return to IDLE    
                 	states.d = States.IDLE
+                    // reset a and b dffs
+                    a_value.d = 0
+                    b_value.d = 0
                 }
                   
-             States.SET_A_LOW:
+            States.SET_A_LOW:
                 // obtain the 16 LSBs of the a value from the 1st and 2nd io_dip from the right
                 a_value.d[15:0] = c{io_dip[1], io_dip[0]}
                 // return to IDLE
                 states.d = States.IDLE
             
             
-             States.SET_A_HIGH:
+            States.SET_A_HIGH:
                 // obtain the 16 MSBs of the a value from the 1st and 2nd io_dip from the right
                 a_value.d[31:16] = c{io_dip[1], io_dip[0]}
                 // return to IDLE
                 states.d = States.IDLE
             
-             States.SET_B_LOW:
+            States.SET_B_LOW:
                 // obtain the 16 LSBs of the b value from the 1st and 2nd io_dip from the right
                 b_value.d[15:0] = c{io_dip[1], io_dip[0]}
                 // return to IDLE
                 states.d = States.IDLE
             
-             States.SET_B_HIGH:
+            States.SET_B_HIGH:
                 // obtain the 16 MSBs of the b value from the 1st and 2nd io_dip from the right
                 b_value.d[31:16] = c{io_dip[1], io_dip[0]}
                 // return to IDLE
@@ -153,55 +156,47 @@ module alu_manual_tester (
 //                     
 //                     // if (r == alu.out) {
 //                        // if (i <= 14) {
-//                            // io_led[0][i/2] = 1b1
+//                            // io_led[0][i/2] = 1
 //                        // }
 //                        // else {
-//                            // io_led[1][i/2] = 1b1
+//                            // io_led[1][i/2] = 1
 //                        // }
 //                     // }
 //                 }
 
         }
         
-        // display the z,v,n on the 7-segments
-        case (alu.z) {
-            b0: 
-                current_value.d[2] = 1b0
-                current_value.d[5] = 1b0
-                current_value.d[6] = 1b0
-            b1:
-                // set the current value to 100 so that if the result is 0,
-                // 1 will be displayed on the 2nd io_segment from the left
-                current_value.d[2] = 1b1
-                current_value.d[5] = 1b1
-                current_value.d[6] = 1b1
-            default:
-                current_value.d[2] = 1b0
-                current_value.d[5] = 1b0
-                current_value.d[6] = 1b0
-        }
+        // display the illop,z,v,n on the 7-segments
+        current_value.d = 0
         
-        case (alu.v) {
-            b0: 
-                current_value.d[1] = 1b0
-                current_value.d[3] = 1b0
-            b1:
-                // set the current value to 10 so that if there is an overflow,
-                // 1 will be displayed on the 3rd io_segment from the left
-                current_value.d[1] = 1b1
-                current_value.d[3] = 1b1
-            default: 
-                current_value.d[1] = 1b0
-                current_value.d[3] = 1b0
+
+        if (alu.z) {
+            // set the current value to 100 so that if the result is 0,
+            // 1 will be displayed on the 2nd io_segment from the left
+            current_value.d[2] = 1
+            current_value.d[5] = 1
+            current_value.d[6] = 1
         }
+        if (alu.v) {
+            // set the current value to 10 so that if there is an overflow,
+            // 1 will be displayed on the 3rd io_segment from the left
+            current_value.d[1] = 1
+            current_value.d[3] = 1
+        }
+        if (alu.n) {
+            // set the current value to 1 so that if there is an overflow,
+            // 1 will be displayed on the 4th io_segment from the left
+            current_value.d[0] = 1
+        }
+        if (alu.illop) {
+            // set the current value to 1000 so that if the opcode is not known,
+            // 1 will be displayed on the 1st io_segment from the left
+            current_value.d = b1111101000
+        }
+
         
-        case (alu.n) {
-            b0: current_value.d[0] = 1b0
-            b1: 
-                // set the current value to 1 so that if there is an overflow,
-                // 1 will be displayed on the 4th io_segment from the left
-                current_value.d[0] = 1b1
-            default: current_value.d[0] = 1b0
+        if (states.q == States.IDLE) {
+            current_value.d = 0
         }
         
         decimal_renderer.value = current_value.q

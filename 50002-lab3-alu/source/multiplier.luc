@@ -4,7 +4,6 @@ module multiplier (
     output mul[32]
 ) {
     
-    
     fa fa[496]
     sig current_row_fa_index[$clog2(496)]
     sig previous_row_fa_index[$clog2(496)]

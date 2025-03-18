@@ -148,24 +148,6 @@
                     "type": "DiskFile",
                     "path": "source/divider.luc"
                 }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/tester_rom.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/operations_rom.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/result_rom.luc"
-                }
             }
         ],
         "constraintFiles": [

@@ -2,7 +2,8 @@ module shifter (
     input a[32],
     input b[5],
     input alufn[6],
-    output shift[32]
+    output shift[32],
+    output illop
 ) {
     
     x_bit_left_shifter xbls[5](#SHIFT({5d16, 5d8, 5d4, 5d2, 5d1}))
@@ -65,11 +66,15 @@ module shifter (
             }
         }
         
+        illop = 0
+
         case(alufn[1:0]){
             b00: shift = xbls.out[4]
             b01: shift = xbrs.out[4]
             b11: shift = xbras.out[4]
-            default: shift = 0
+            default:
+                shift = 0
+                illop = 1
         }
     } 
 }
