@@ -10,6 +10,14 @@ module alu_manual_tester (
 ) {
     
     alu alu(#SIZE(32))
+    tester_rom tr
+    operations_rom or
+    result_rom rr
+    
+    sig bin1[32]
+    sig bin2[32]
+    sig op[6]
+    sig r[32]
     
     enum States {
         SET_A_LOW,
@@ -17,6 +25,7 @@ module alu_manual_tester (
         SET_B_LOW,
         SET_B_HIGH,
         COMPUTE,
+        AUTO,
         IDLE
     }
     
@@ -52,6 +61,16 @@ module alu_manual_tester (
         alu.b = 0
         alu.alufn = 0
         
+        tr.address = 0
+        or.address = 0
+        rr.address = 0
+        
+        bin1 = 0
+        bin2 = 0
+        op = 0
+        r = 0
+
+        
         case (states.q){
             States.IDLE:
                 	if (io_button_edge.out[0]) { //if button 0 is pressed
@@ -73,7 +92,10 @@ module alu_manual_tester (
                 	else if (io_button_edge.out[1]) { //if button 1 is pressed down
                        // compute the operation
                 	    	 states.d = States.COMPUTE
-                	}  
+                	}
+                 else if (io_dip[2][7]) {
+                       states.d = States.AUTO
+                }
             
              States.COMPUTE:
                  // obtain the alu a value from its dff
@@ -112,6 +134,32 @@ module alu_manual_tester (
                  b_value.d[31:16] = c{io_dip[1], io_dip[0]}
                  // return to IDLE
 		               states.d = States.IDLE
+            
+             States.AUTO:
+                 repeat(i,30,0,2) {
+                     tr.address = i
+                     bin1 = tr.bin
+                     tr.address = i + 1
+                     bin2 = tr.bin
+                        
+                     or.address = i/2
+                     op = or.op
+                     rr.address = i/2
+                     r = rr.result
+                    
+                     alu.a = bin1
+                     alu.b = bin2
+                     alu.alufn = op
+                     
+                     // if (r == alu.out) {
+                        // if (i <= 14) {
+                            // io_led[0][i/2] = 1b1
+                        // }
+                        // else {
+                            // io_led[1][i/2] = 1b1
+                        // }
+                     // }
+                 }
 
         }
         
