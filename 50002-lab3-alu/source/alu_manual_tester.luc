@@ -10,9 +10,9 @@ module alu_manual_tester (
 ) {
     
     alu alu(#SIZE(32))
-    tester_rom tr
-    operations_rom or
-    result_rom rr
+//    tester_rom tr
+//    operations_rom or
+//    result_rom rr
     
     sig bin1[32]
     sig bin2[32]
@@ -61,14 +61,14 @@ module alu_manual_tester (
         alu.b = 0
         alu.alufn = 0
         
-        tr.address = 0
-        or.address = 0
-        rr.address = 0
+//        tr.address = 0
+//        or.address = 0
+//        rr.address = 0
         
-        bin1 = 0
-        bin2 = 0
-        op = 0
-        r = 0
+//        bin1 = 0
+//        bin2 = 0
+//        op = 0
+//        r = 0
 
         
         case (states.q){
@@ -93,73 +93,73 @@ module alu_manual_tester (
                        // compute the operation
                 	    	 states.d = States.COMPUTE
                 	}
-                 else if (io_dip[2][7]) {
-                       states.d = States.AUTO
-                }
+//                 else if (io_dip[2][7]) {
+//                       states.d = States.AUTO
+//                }
             
              States.COMPUTE:
-                 // obtain the alu a value from its dff
-            		   alu.a = a_value.q
-                 // obtain the alu b value from its dff
-            		   alu.b = b_value.q
-                 // obtain the alu alufn value from the io_dip
-                 alu.alufn = io_dip[2][5:0]
+                // obtain the alu a value from its dff
+            		alu.a = a_value.q
+                // obtain the alu b value from its dff
+                    alu.b = b_value.q
+                // obtain the alu alufn value from the io_dip
+                    alu.alufn = io_dip[2][5:0]
                 
-                 if (io_button_edge.out[1]) { //if button 1 is pressed down
-                       // return to IDLE    
-                	    	 states.d = States.IDLE
-                	}
+                if (io_button_edge.out[1]) { //if button 1 is pressed down
+                    // return to IDLE    
+                	states.d = States.IDLE
+                }
                   
              States.SET_A_LOW:
-                 // obtain the 16 LSBs of the a value from the 1st and 2nd io_dip from the right
-                 a_value.d[15:0] = c{io_dip[1], io_dip[0]}
-                 // return to IDLE
-                 states.d = States.IDLE
+                // obtain the 16 LSBs of the a value from the 1st and 2nd io_dip from the right
+                a_value.d[15:0] = c{io_dip[1], io_dip[0]}
+                // return to IDLE
+                states.d = States.IDLE
             
             
              States.SET_A_HIGH:
-                 // obtain the 16 MSBs of the a value from the 1st and 2nd io_dip from the right
-                 a_value.d[31:16] = c{io_dip[1], io_dip[0]}
-                 // return to IDLE
-                 states.d = States.IDLE
+                // obtain the 16 MSBs of the a value from the 1st and 2nd io_dip from the right
+                a_value.d[31:16] = c{io_dip[1], io_dip[0]}
+                // return to IDLE
+                states.d = States.IDLE
             
              States.SET_B_LOW:
-                 // obtain the 16 LSBs of the b value from the 1st and 2nd io_dip from the right
-                 b_value.d[15:0] = c{io_dip[1], io_dip[0]}
-                 // return to IDLE
-                 states.d = States.IDLE
+                // obtain the 16 LSBs of the b value from the 1st and 2nd io_dip from the right
+                b_value.d[15:0] = c{io_dip[1], io_dip[0]}
+                // return to IDLE
+                states.d = States.IDLE
             
              States.SET_B_HIGH:
-                 // obtain the 16 MSBs of the b value from the 1st and 2nd io_dip from the right
-                 b_value.d[31:16] = c{io_dip[1], io_dip[0]}
-                 // return to IDLE
-		               states.d = States.IDLE
+                // obtain the 16 MSBs of the b value from the 1st and 2nd io_dip from the right
+                b_value.d[31:16] = c{io_dip[1], io_dip[0]}
+                // return to IDLE
+		            states.d = States.IDLE
             
-             States.AUTO:
-                 repeat(i,30,0,2) {
-                     tr.address = i
-                     bin1 = tr.bin
-                     tr.address = i + 1
-                     bin2 = tr.bin
-                        
-                     or.address = i/2
-                     op = or.op
-                     rr.address = i/2
-                     r = rr.result
-                    
-                     alu.a = bin1
-                     alu.b = bin2
-                     alu.alufn = op
-                     
-                     // if (r == alu.out) {
-                        // if (i <= 14) {
-                            // io_led[0][i/2] = 1b1
-                        // }
-                        // else {
-                            // io_led[1][i/2] = 1b1
-                        // }
-                     // }
-                 }
+//             States.AUTO:
+//                 repeat(i,30,0,2) {
+//                     tr.address = i
+//                     bin1 = tr.bin
+//                     tr.address = i + 1
+//                     bin2 = tr.bin
+//                        
+//                     or.address = i/2
+//                     op = or.op
+//                     rr.address = i/2
+//                     r = rr.result
+//                    
+//                     alu.a = bin1
+//                     alu.b = bin2
+//                     alu.alufn = op
+//                     
+//                     // if (r == alu.out) {
+//                        // if (i <= 14) {
+//                            // io_led[0][i/2] = 1b1
+//                        // }
+//                        // else {
+//                            // io_led[1][i/2] = 1b1
+//                        // }
+//                     // }
+//                 }
 
         }
         
@@ -216,7 +216,5 @@ module alu_manual_tester (
         io_led[2] = alu.out[23:16]
         led = alu.out[31:24]
         
-        // to remove
-        //io_led[0][4:0] = ~io_button
     }
 }

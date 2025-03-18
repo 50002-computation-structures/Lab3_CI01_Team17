@@ -10,7 +10,7 @@ module adder #(
     output n
 ) {
     rca rca(#SIZE(SIZE))
-    sig xb[SIZE]
+    sig msb
     
     always {
         out = 0
@@ -18,14 +18,19 @@ module adder #(
         v = 0
         n = 0
         
-        xb[SIZE-1:0] = b ^ SIZEx{alufn_signal[0]}
+        if (alufn_signal[0] == 1) {
+            rca.b = ~b
+            msb = ~b[SIZE-1]
+        } else {
+            rca.b = b
+            msb = b[SIZE-1]
+        }
         rca.a = a
-        rca.b = xb
         rca.cin = alufn_signal[0]
         
         out = rca.s
         z = ~| rca.s
-        v = (a[SIZE-1] & xb[SIZE-1] & ~rca.s[SIZE-1]) | (~a[SIZE-1] & ~xb[SIZE-1] & rca.s[SIZE-1])
+        v = (a[SIZE-1] & msb & ~rca.s[SIZE-1]) | (~a[SIZE-1] & ~msb & rca.s[SIZE-1])
         n = rca.s[SIZE-1]
         
     }

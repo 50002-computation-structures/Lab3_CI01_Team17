@@ -9,7 +9,6 @@ module alu #(
     output v,
     output n
 ) {
-    
     adder adder(#SIZE(SIZE))
     compare compare()
     boolean boolean()
@@ -18,40 +17,39 @@ module alu #(
     divider divider()
     sig temp_out[SIZE]
     always {
-        adder.a = a;
-        adder.b = b;
-        adder.alufn_signal = alufn;
+        adder.a = a
+        adder.b = b
+        adder.alufn_signal = alufn
         
-        boolean.a = a;
-        boolean.b = b;
-        boolean.alufn = alufn;
+        boolean.a = a
+        boolean.b = b
+        boolean.alufn = alufn
         
-        compare.z = adder.z;
-        compare.v = adder.v;
-        compare.n = adder.n;
-        compare.alufn = alufn;
+        compare.z = adder.z
+        compare.v = adder.v
+        compare.n = adder.n
+        compare.alufn = alufn
         
-        shifter.a = a;
-        shifter.b = b;
-        shifter.alufn = alufn;
+        shifter.a = a
+        shifter.b = b
+        shifter.alufn = alufn
         
-        multiplier.a = a;
-        multiplier.b = b;
+        multiplier.a = a
+        multiplier.b = b
         
-        divider.a = a;
-        divider.b = b;
+        divider.a = a
+        divider.b = b
         
-        z = adder.z;
-        v = adder.v;
-        n = adder.n;
+        z = adder.z
+        v = adder.v
+        n = adder.n
         
         case (alufn[5:4]) {
             b00:
                 case(alufn[1:0]) {
-                    b00: out = adder.out
                     b10: out = multiplier.mul
                     b11: out = divider.d
-                    default: out = 0
+                    default: out = adder.out
                 }
             b01: out = boolean.bool
             b10: out = shifter.shift

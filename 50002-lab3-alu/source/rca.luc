@@ -18,7 +18,6 @@ module rca #(
         repeat(i, SIZE-1,1){
             fa.cin[i] = fa.cout[i-1]
         }
-        
         s = fa.s;
     }
 }
