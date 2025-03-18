@@ -5,9 +5,9 @@ module shifter (
     output shift[32]
 ) {
     
-    x_bit_left_shifter xbls[5](#SHIFT({5d1, 5d2, 5d4, 5d8, 5d16}))
-    x_bit_right_shifter xbrs[5](#SHIFT({5d1, 5d2, 5d4, 5d8, 5d16}))
-    x_bit_right_ari_shifter xbras[5](#SHIFT({5d1, 5d2, 5d4, 5d8, 5d16}))
+    x_bit_left_shifter xbls[5](#SHIFT({5d16, 5d8, 5d4, 5d2, 5d1}))
+    x_bit_right_shifter xbrs[5](#SHIFT({5d16, 5d8, 5d4, 5d2, 5d1}))
+    x_bit_right_ari_shifter xbras[5](#SHIFT({5d16, 5d8, 5d4, 5d2, 5d1}))
     
     
     always {
@@ -45,7 +45,7 @@ module shifter (
                 xbrs.pad[i] = 0
             }
             else {
-                xbrs.a[i] = xbls.out[i-1]
+                xbrs.a[i] = xbrs.out[i-1]
                 xbrs.shift[i] = b[i]
                 xbrs.pad[i] = 0
             }
@@ -59,7 +59,7 @@ module shifter (
                 xbras.pad[i] = a[31]
             }
             else {
-                xbras.a[i] = xbls.out[i-1]
+                xbras.a[i] = xbras.out[i-1]
                 xbras.shift[i] = b[i]
                 xbras.pad[i] = a[31]
             }
