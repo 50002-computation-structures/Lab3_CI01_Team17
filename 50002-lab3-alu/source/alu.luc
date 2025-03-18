@@ -15,7 +15,6 @@ module alu (
     multiplier multiplier()
     
     always {
-        // implement alu logic here
         adder.a = a;
         adder.b = b;
         adder.alufn_signal = alufn;

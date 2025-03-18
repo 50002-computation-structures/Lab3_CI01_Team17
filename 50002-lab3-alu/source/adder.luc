@@ -13,7 +13,6 @@ module adder #(
     sig xb[SIZE]
     
     always {
-        // implement adder/subtractor unit logic here
         out = 0
         z = 0
         v = 0

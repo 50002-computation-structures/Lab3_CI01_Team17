@@ -11,7 +11,6 @@ module shifter (
     
     
     always {
-        // implement shifter unit logic here
         xbls.a = 5x{{32b0}}
         xbls.shift = 0
         xbls.pad = 0
@@ -24,6 +23,7 @@ module shifter (
         xbras.shift = 0
         xbras.pad = 0
         
+        // for ith shifter, shift accordingly if ith bit at b is 1
         repeat(i,5) {
             if (i==0) {
                 xbls.a[i] = a
@@ -51,6 +51,7 @@ module shifter (
             }
         }
         
+        // the only difference is that the pad is now the MSB of a so as to retain the sign of a
         repeat(i,5) {
             if (i==0) {
                 xbras.a[i] = a
