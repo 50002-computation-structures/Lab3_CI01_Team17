@@ -11,7 +11,7 @@ module alu_manual_tester#(
     output led[8]
 ) {
     
-    alu alu
+    alu alu(#SIZE(32))
     
     enum States {
         SET_A_LOW,

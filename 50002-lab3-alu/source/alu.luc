@@ -1,19 +1,21 @@
-module alu (
-    input a[32],
-    input b[32],
+module alu #(
+    SIZE ~ 32 : SIZE > 1
+)(
+    input a[SIZE],
+    input b[SIZE],
     input alufn[6],
-    output out[32],
+    output out[SIZE],
     output z,
     output v,
     output n
 ) {
     
-    adder adder(#SIZE(32))
+    adder adder(#SIZE(SIZE))
     compare compare()
     boolean boolean()
     shifter shifter()
     multiplier multiplier()
-    
+    sig temp_out[SIZE]
     always {
         adder.a = a;
         adder.b = b;
@@ -51,6 +53,5 @@ module alu (
             b11: out = compare.cmp
             default: out = 0
         }
-           
     }
 }
