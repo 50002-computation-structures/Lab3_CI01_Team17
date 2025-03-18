@@ -14,14 +14,9 @@ module rca #(
         
         fa.a = a
         fa.b = b
-        
-        repeat(i, SIZE){
-            if (i == 0) {
-                fa.cin[i] = cin
-            }
-            else {
-                fa.cin[i] = fa.cout[i-1]
-            }
+        fa.cin[0] = cin
+        repeat(i, SIZE-1,1){
+            fa.cin[i] = fa.cout[i-1]
         }
         
         s = fa.s;
