@@ -15,6 +15,7 @@ module alu #(
     boolean boolean()
     shifter shifter()
     multiplier multiplier()
+    divider divider()
     sig temp_out[SIZE]
     always {
         adder.a = a;
@@ -36,16 +37,20 @@ module alu #(
         
         multiplier.a = a;
         multiplier.b = b;
-         
+        
+        divider.a = a;
+        divider.b = b;
+        
         z = adder.z;
         v = adder.v;
         n = adder.n;
         
         case (alufn[5:4]) {
             b00:
-                case(alufn[1]) {
-                    b0: out = adder.out
-                    b1: out = multiplier.mul
+                case(alufn[1:0]) {
+                    b00: out = adder.out
+                    b10: out = multiplier.mul
+                    b11: out = divider.d
                     default: out = 0
                 }
             b01: out = boolean.bool
