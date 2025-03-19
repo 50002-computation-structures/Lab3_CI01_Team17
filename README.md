@@ -9,6 +9,7 @@ The **Arithmetic Logic Unit (ALU)** is a **combinational logic device** responsi
 - `Z`: Zero flag, indicating if the result is zero.
 - `V`: Overflow flag.
 - `N`: Negative flag.
+- "illop": Illegal Opcode flag
 
 ## ALU Modules
 
