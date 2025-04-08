@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr  9 00:18:16 2025
+| Date         : Wed Apr  9 00:34:11 2025
 | Host         : PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file alchitry_top_control_sets_placed.rpt
 | Design       : alchitry_top
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              62 |           38 |
+| No           | No                    | No                     |              62 |           36 |
 | No           | No                    | Yes                    |               4 |            3 |
 | No           | Yes                   | No                     |              18 |            5 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             134 |           45 |
+| Yes          | Yes                   | No                     |             134 |           41 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,17 +74,17 @@ Table of Contents
 |  Clock Signal  |                                         Enable Signal                                        |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG |                                                                                              | reset_cond/M_reset_cond_in                                                  |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[2].io_button_cond/D_ctr_q[0]_i_2__1_n_0                   | alu_manual/forLoop_idx_0_495609120[2].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[3].io_button_cond/D_ctr_q[0]_i_2__0_n_0                   | alu_manual/forLoop_idx_0_495609120[3].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[4].io_button_cond/D_ctr_q[0]_i_2_n_0                      | alu_manual/forLoop_idx_0_495609120[4].io_button_cond/sync/clear             |                4 |             14 |         3.50 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[0].io_button_cond/D_ctr_q[0]_i_2__3_n_0                   | alu_manual/forLoop_idx_0_495609120[0].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/D_ctr_q[0]_i_2__2_n_0                   | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/FSM_sequential_D_states_q_reg[0]_rep[0] | reset_cond/Q[0]                                                             |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/E[0]                                    | reset_cond/Q[0]                                                             |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/E[1]                                    | reset_cond/Q[0]                                                             |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_495609120[1].io_button_cond/FSM_sequential_D_states_q_reg[0]_rep[1] | reset_cond/Q[0]                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[0].io_button_cond/D_ctr_q[0]_i_2__3_n_0                   | alu_manual/forLoop_idx_0_800667004[0].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/D_ctr_q[0]_i_2__2_n_0                   | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[2].io_button_cond/D_ctr_q[0]_i_2__1_n_0                   | alu_manual/forLoop_idx_0_800667004[2].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[3].io_button_cond/D_ctr_q[0]_i_2__0_n_0                   | alu_manual/forLoop_idx_0_800667004[3].io_button_cond/sync/D_pipe_q_reg[1]_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[4].io_button_cond/D_ctr_q[0]_i_2_n_0                      | alu_manual/forLoop_idx_0_800667004[4].io_button_cond/sync/clear             |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/FSM_sequential_D_states_q_reg[0]_rep[1] | reset_cond/Q[0]                                                             |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/E[1]                                    | reset_cond/Q[0]                                                             |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/FSM_sequential_D_states_q_reg[0]_rep[0] | reset_cond/Q[0]                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | alu_manual/forLoop_idx_0_800667004[1].io_button_cond/E[0]                                    | reset_cond/Q[0]                                                             |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG |                                                                                              | alu_manual/seg/ctr/D_ctr_q[0]_i_1__4_n_0                                    |                5 |             18 |         3.60 |
-|  clk_IBUF_BUFG |                                                                                              |                                                                             |               38 |             62 |         1.63 |
+|  clk_IBUF_BUFG |                                                                                              |                                                                             |               36 |             62 |         1.72 |
 +----------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

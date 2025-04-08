@@ -14,7 +14,7 @@ module alu_manual_tester (
         output reg [3:0] io_select,
         output reg [7:0] led
     );
-    localparam _MP_SIZE_2038306653 = 6'h20;
+    localparam _MP_SIZE_873305027 = 6'h20;
     logic [31:0] M_alu_a;
     logic [31:0] M_alu_b;
     logic [5:0] M_alu_alufn;
@@ -25,7 +25,7 @@ module alu_manual_tester (
     logic M_alu_illop;
     
     alu #(
-        .SIZE(_MP_SIZE_2038306653)
+        .SIZE(_MP_SIZE_873305027)
     ) alu (
         .a(M_alu_a),
         .b(M_alu_b),
@@ -48,61 +48,61 @@ module alu_manual_tester (
     localparam SIZE = 6'h20;
     localparam SEVEN_SEG_DIV = 5'h10;
     localparam CLK_FREQ = 24'h989680;
-    localparam logic [4:0][0:0] _MP_RISE_293832197 = {{1'h1, 1'h1, 1'h1, 1'h1, 1'h1}};
-    localparam logic [4:0][0:0] _MP_FALL_293832197 = {{1'h0, 1'h0, 1'h0, 1'h0, 1'h0}};
+    localparam logic [4:0][0:0] _MP_RISE_932128591 = {{1'h1, 1'h1, 1'h1, 1'h1, 1'h1}};
+    localparam logic [4:0][0:0] _MP_FALL_932128591 = {{1'h0, 1'h0, 1'h0, 1'h0, 1'h0}};
     logic [4:0] M_io_button_edge_in;
     logic [4:0] M_io_button_edge_out;
     logic [4:0] M_io_button_edge_clk = {3'h5{clk}};
     
-    genvar idx_0_293832197;
+    genvar idx_0_932128591;
     
     generate
-        for (idx_0_293832197 = 0; idx_0_293832197 < 5; idx_0_293832197 = idx_0_293832197 + 1) begin: forLoop_idx_0_293832197
+        for (idx_0_932128591 = 0; idx_0_932128591 < 5; idx_0_932128591 = idx_0_932128591 + 1) begin: forLoop_idx_0_932128591
             edge_detector #(
-                .RISE(_MP_RISE_293832197[idx_0_293832197]),
-                .FALL(_MP_FALL_293832197[idx_0_293832197])
+                .RISE(_MP_RISE_932128591[idx_0_932128591]),
+                .FALL(_MP_FALL_932128591[idx_0_932128591])
             ) io_button_edge (
-                .clk(M_io_button_edge_clk[idx_0_293832197]),
-                .in(M_io_button_edge_in[idx_0_293832197]),
-                .out(M_io_button_edge_out[idx_0_293832197])
+                .clk(M_io_button_edge_clk[idx_0_932128591]),
+                .in(M_io_button_edge_in[idx_0_932128591]),
+                .out(M_io_button_edge_out[idx_0_932128591])
             );
         end
     endgenerate
     
     
-    localparam logic [4:0][23:0] _MP_CLK_FREQ_495609120 = {{24'h989680, 24'h989680, 24'h989680, 24'h989680, 24'h989680}};
-    localparam _MP_MIN_DELAY_495609120 = 5'h14;
-    localparam _MP_NUM_SYNC_495609120 = 2'h2;
+    localparam logic [4:0][23:0] _MP_CLK_FREQ_800667004 = {{24'h989680, 24'h989680, 24'h989680, 24'h989680, 24'h989680}};
+    localparam _MP_MIN_DELAY_800667004 = 5'h14;
+    localparam _MP_NUM_SYNC_800667004 = 2'h2;
     logic [4:0] M_io_button_cond_in;
     logic [4:0] M_io_button_cond_out;
     logic [4:0] M_io_button_cond_clk = {3'h5{clk}};
     
-    genvar idx_0_495609120;
+    genvar idx_0_800667004;
     
     generate
-        for (idx_0_495609120 = 0; idx_0_495609120 < 5; idx_0_495609120 = idx_0_495609120 + 1) begin: forLoop_idx_0_495609120
+        for (idx_0_800667004 = 0; idx_0_800667004 < 5; idx_0_800667004 = idx_0_800667004 + 1) begin: forLoop_idx_0_800667004
             button_conditioner #(
-                .CLK_FREQ(_MP_CLK_FREQ_495609120[idx_0_495609120]),
-                .MIN_DELAY(_MP_MIN_DELAY_495609120),
-                .NUM_SYNC(_MP_NUM_SYNC_495609120)
+                .CLK_FREQ(_MP_CLK_FREQ_800667004[idx_0_800667004]),
+                .MIN_DELAY(_MP_MIN_DELAY_800667004),
+                .NUM_SYNC(_MP_NUM_SYNC_800667004)
             ) io_button_cond (
-                .clk(M_io_button_cond_clk[idx_0_495609120]),
-                .in(M_io_button_cond_in[idx_0_495609120]),
-                .out(M_io_button_cond_out[idx_0_495609120])
+                .clk(M_io_button_cond_clk[idx_0_800667004]),
+                .in(M_io_button_cond_in[idx_0_800667004]),
+                .out(M_io_button_cond_out[idx_0_800667004])
             );
         end
     endgenerate
     
     
-    localparam _MP_DIGITS_1521929310 = 3'h4;
-    localparam _MP_DIV_1521929310 = 5'h10;
+    localparam _MP_DIGITS_1828550424 = 3'h4;
+    localparam _MP_DIV_1828550424 = 5'h10;
     logic [3:0][3:0] M_seg_values;
     logic [6:0] M_seg_seg;
     logic [3:0] M_seg_sel;
     
     multi_seven_seg #(
-        .DIGITS(_MP_DIGITS_1521929310),
-        .DIV(_MP_DIV_1521929310)
+        .DIGITS(_MP_DIGITS_1828550424),
+        .DIV(_MP_DIV_1828550424)
     ) seg (
         .clk(clk),
         .rst(rst),
@@ -116,14 +116,14 @@ module alu_manual_tester (
     logic [31:0] D_a_value_d, D_a_value_q = 0;
     logic [31:0] D_b_value_d, D_b_value_q = 0;
     logic [31:0] D_current_value_d, D_current_value_q = 0;
-    localparam _MP_DIGITS_1870316483 = 3'h4;
-    localparam _MP_LEADING_ZEROS_1870316483 = 1'h1;
+    localparam _MP_DIGITS_2074952930 = 3'h4;
+    localparam _MP_LEADING_ZEROS_2074952930 = 1'h1;
     logic [13:0] M_decimal_renderer_value;
     logic [3:0][3:0] M_decimal_renderer_digits;
     
     bin_to_dec #(
-        .DIGITS(_MP_DIGITS_1870316483),
-        .LEADING_ZEROS(_MP_LEADING_ZEROS_1870316483)
+        .DIGITS(_MP_DIGITS_2074952930),
+        .LEADING_ZEROS(_MP_LEADING_ZEROS_2074952930)
     ) decimal_renderer (
         .value(M_decimal_renderer_value),
         .digits(M_decimal_renderer_digits)

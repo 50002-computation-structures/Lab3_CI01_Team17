@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Apr  9 00:17:54 2025
+  **** Start of session at: Wed Apr  9 00:33:47 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -17,7 +17,7 @@ Command: link_design -top alchitry_top -part xc7a35tftg256-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 492.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 491.281 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.2
@@ -28,13 +28,13 @@ Finished Parsing XDC File [C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_T
 Parsing XDC File [C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/constraint/au_props.xdc]
 Finished Parsing XDC File [C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/constraint/au_props.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1190.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1193.027 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1190.629 ; gain = 903.723
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1193.027 ; gain = 907.375
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -45,114 +45,114 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.499 . Memory (MB): peak = 1190.629 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.502 . Memory (MB): peak = 1193.027 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 305d80dcf
+Ending Cache Timing Information Task | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1223.180 ; gain = 32.551
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1225.145 ; gain = 32.117
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 305d80dcf
+Phase 1.1 Core Generation And Design Setup | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 305d80dcf
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 1 Initialization | Checksum: 305d80dcf
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 1 Initialization | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 305d80dcf
+Phase 2.1 Timer Update | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 305d80dcf
+Phase 2.2 Timing Data Collection | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 2 Timer Update And Timing Data Collection | Checksum: 305d80dcf
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
 INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 305d80dcf
+Phase 3 Retarget | Checksum: 2f24043ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Retarget | Checksum: 305d80dcf
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Retarget | Checksum: 2f24043ba
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 26aebadbf
+Phase 4 Constant propagation | Checksum: 3167e2011
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Constant propagation | Checksum: 26aebadbf
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Constant propagation | Checksum: 3167e2011
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 5 Sweep | Checksum: 299065395
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 5 Sweep | Checksum: 2eaf522ba
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Sweep | Checksum: 299065395
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Sweep | Checksum: 2eaf522ba
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 299065395
+Phase 6 BUFG optimization | Checksum: 2eaf522ba
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1614.297 ; gain = 0.000
-BUFG optimization | Checksum: 299065395
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1616.871 ; gain = 0.000
+BUFG optimization | Checksum: 2eaf522ba
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 299065395
+Phase 7 Shift Register Optimization | Checksum: 2eaf522ba
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Shift Register Optimization | Checksum: 299065395
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Shift Register Optimization | Checksum: 2eaf522ba
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 299065395
+Phase 8 Post Processing Netlist | Checksum: 2eaf522ba
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Post Processing Netlist | Checksum: 299065395
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Post Processing Netlist | Checksum: 2eaf522ba
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2878fd27b
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.183 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 2878fd27b
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.190 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 9 Finalization | Checksum: 2878fd27b
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 9 Finalization | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.190 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1616.871 ; gain = 0.000
 Opt_design Change Summary
 =========================
 
@@ -169,26 +169,26 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 2878fd27b
+Ending Logic Optimization Task | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 2878fd27b
+Ending Power Optimization Task | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 2878fd27b
+Ending Final Cleanup Task | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 2878fd27b
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 29933c9bb
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1616.871 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 28 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
@@ -201,16 +201,16 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/vivado/alu.runs/impl_1/alchitry_top_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1616.871 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1616.871 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/vivado/alu.runs/impl_1/alchitry_top_opt.dcp' has been generated.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -230,64 +230,64 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1616.871 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 25fc2db94
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1547f4001
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 16af22d8a
+Phase 1.3 Build Placer Netlist Model | Checksum: 2199fb467
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.435 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.455 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 16af22d8a
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2199fb467
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.437 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 16af22d8a
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2199fb467
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.441 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.461 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 24ad3c192
+Phase 2.1 Floorplanning | Checksum: 198811b6e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.611 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.634 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 20fea515e
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 20cfa573d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.717 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.738 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 20fea515e
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 20cfa573d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.724 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.745 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.4 Global Place Phase1
-Phase 2.4 Global Place Phase1 | Checksum: 1a01c3a51
+Phase 2.4 Global Place Phase1 | Checksum: 1d6b5e7e0
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
-Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 252415a7f
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1e3522611
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 2.5.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 75 LUTNM shape to break, 28 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 5, two critical 70, total 75, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 88 nets or LUTs. Breaked 75 LUTs, combined 13 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1035] Found 73 LUTNM shape to break, 27 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 3, two critical 70, total 73, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 86 nets or LUTs. Breaked 73 LUTs, combined 13 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -306,7 +306,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -315,7 +315,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           75  |             13  |                    88  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           73  |             13  |                    86  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -324,69 +324,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |           75  |             13  |                    88  |           0  |           9  |  00:00:00  |
+|  Total                                            |           73  |             13  |                    86  |           0  |           9  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1d8401e9d
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 255b44822
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 2.5 Global Place Phase2 | Checksum: 200a02f3a
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 1b8959b38
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 200a02f3a
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1b8959b38
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1ae3c7474
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c699b277
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c8464d67
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2b02d158c
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 23d60c7ab
+Phase 3.3 Area Swap Optimization | Checksum: 287a78cfd
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 257e5aa30
+Phase 3.4 Pipeline Register Optimization | Checksum: 2ba5540b9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 299a257d6
+Phase 3.5 Fast Optimization | Checksum: 2be5f1605
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 18db49b48
+Phase 3.6 Small Shape Detail Placement | Checksum: 1ee4bf3e2
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 23f3630d9
+Phase 3.7 Re-assign LUT pins | Checksum: 1c3b2dc91
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 2618b4ceb
+Phase 3.8 Pipeline Register Optimization | Checksum: 2665ad86f
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 1b78cacd0
+Phase 3.9 Fast Optimization | Checksum: 28dc0e490
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1b78cacd0
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1616.871 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 28dc0e490
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1616.871 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -394,7 +394,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 21d804028
+Post Placement Optimization Initialization | Checksum: 2a54fd359
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -402,33 +402,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-77.251 | TNS=-229.539 |
-Phase 1 Physical Synthesis Initialization | Checksum: 166232010
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.329 | TNS=-224.138 |
+Phase 1 Physical Synthesis Initialization | Checksum: 15e3b4ce9
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1619.320 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 19ae56450
+Ending Physical Synthesis Task | Checksum: 24de4b928
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 21d804028
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1619.320 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2a54fd359
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1619.320 ; gain = 2.449
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-76.588. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 239c27a9a
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-76.041. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 214511e17
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 239c27a9a
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
+Phase 4.1 Post Commit Optimization | Checksum: 214511e17
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 239c27a9a
+Phase 4.2 Post Placement Cleanup | Checksum: 214511e17
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
 
 Phase 4.3 Placer Reporting
 
@@ -438,7 +438,7 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                2x2|
+|      North|                2x2|                2x2|
 |___________|___________________|___________________|
 |      South|                1x1|                1x1|
 |___________|___________________|___________________|
@@ -447,44 +447,44 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 239c27a9a
+Phase 4.3.1 Print Estimated Congestion | Checksum: 214511e17
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 239c27a9a
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
+Phase 4.3 Placer Reporting | Checksum: 214511e17
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1619.320 ; gain = 0.000
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1dba3962e
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b63239ab
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Ending Placer Task | Checksum: 117e394d8
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
+Ending Placer Task | Checksum: 17550a8ef
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1619.320 ; gain = 2.449
 73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.297 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1619.320 ; gain = 2.449
 INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
 Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file alchitry_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1619.320 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file alchitry_top_utilization_placed.rpt -pb alchitry_top_utilization_placed.pb
 INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file alchitry_top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.297 ; gain = 0.000
-INFO: [Vivado 12-24828] Executing command : report_io -file alchitry_top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1614.297 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1619.320 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1620.480 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1622.477 ; gain = 1.996
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1622.477 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.297 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1614.297 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1622.477 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1622.477 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1622.477 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1622.477 ; gain = 1.996
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/vivado/alu.runs/impl_1/alchitry_top_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -492,63 +492,71 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1624.457 ; gain = 10.160
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.15s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1624.457 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1635.027 ; gain = 12.551
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.15s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1635.027 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.931 | TNS=-228.765 |
-Phase 1 Physical Synthesis Initialization | Checksum: 172b8a066
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.080 | TNS=-223.586 |
+Phase 1 Physical Synthesis Initialization | Checksum: 197047135
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1624.473 ; gain = 0.016
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.931 | TNS=-228.765 |
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1635.027 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.080 | TNS=-223.586 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 172b8a066
+Phase 2 DSP Register Optimization | Checksum: 197047135
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1624.473 ; gain = 0.016
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1635.027 ; gain = 0.000
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.931 | TNS=-228.765 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.080 | TNS=-223.586 |
 INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[6]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__11_n_0. Replicated 4 times.
+INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.062 | TNS=-223.550 |
+INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.029 | TNS=-223.484 |
+INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__11_n_0. Replicated 5 times.
 INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__11_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.865 | TNS=-228.633 |
-INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__0_n_0. Replicated 4 times.
-INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__0_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.857 | TNS=-228.617 |
-INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Replicated 2 times.
-INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.856 | TNS=-228.615 |
-INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__11_n_0_repN. Replicated 2 times.
-INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[2]_rep__11_n_0_repN. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.850 | TNS=-228.603 |
-INFO: [Physopt 32-81] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.848 | TNS=-228.599 |
-INFO: [Physopt 32-663] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0.  Re-placed instance alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0
-INFO: [Physopt 32-735] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.818 | TNS=-228.539 |
-INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.013 | TNS=-223.452 |
+INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp.
 INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.687 | TNS=-228.399 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.013 | TNS=-223.264 |
 INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/io_led[0][0]_INST_0_i_1_comp_1.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_2_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.674 | TNS=-228.278 |
-INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp_1.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_2_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.608 | TNS=-228.212 |
-INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp.
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[2]_i_1_comp.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.965 | TNS=-223.216 |
+INFO: [Physopt 32-663] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0.  Re-placed instance alu_manual/alu/divider/D_current_value_q[6]_i_2
 INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.566 | TNS=-227.975 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.893 | TNS=-223.214 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.891 | TNS=-223.051 |
+INFO: [Physopt 32-663] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0.  Re-placed instance alu_manual/alu/divider/D_current_value_q[6]_i_2
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.876 | TNS=-223.036 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[2]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.730 | TNS=-222.886 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.730 | TNS=-222.715 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[2]_i_1_comp.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.561 | TNS=-222.546 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[2]_i_1_comp_2.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.555 | TNS=-222.440 |
+INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[6]_i_1_comp_2.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_current_value_q[6]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.459 | TNS=-222.344 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_18_n_0. Optimizations did not improve timing on the net.
@@ -568,6 +576,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_73_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_88_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_120_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[2]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_18_n_0. Optimizations did not improve timing on the net.
@@ -577,7 +586,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_74_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_89_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_104_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_123_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][3]_INST_0_i_21_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_23_n_0. Optimizations did not improve timing on the net.
@@ -607,6 +615,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_49_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_59_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_66_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[6]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][6]_INST_0_i_16_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][6]_INST_0_i_22_n_0. Optimizations did not improve timing on the net.
@@ -664,7 +673,8 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_84_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_99_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_105_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_117_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[12]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_26_n_0. Optimizations did not improve timing on the net.
@@ -674,6 +684,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_69_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_79_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_84_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_91_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[13]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_12_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_22_n_0. Optimizations did not improve timing on the net.
@@ -703,7 +714,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_38_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_43_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_48_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_55_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[16]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_17_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_35_n_0. Optimizations did not improve timing on the net.
@@ -733,7 +743,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_39_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_44_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_49_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_56_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[19]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][3]_INST_0_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][3]_INST_0_i_23_n_0. Optimizations did not improve timing on the net.
@@ -791,11 +800,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_5
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_70_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_85_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_97_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_113_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.494 | TNS=-227.831 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_109_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[25]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_24_n_0. Optimizations did not improve timing on the net.
@@ -805,7 +810,12 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_5
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_63_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_70_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_80_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_90_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.454 | TNS=-222.334 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_91_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.349 | TNS=-222.124 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[26]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_22_n_0. Optimizations did not improve timing on the net.
@@ -815,12 +825,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_5
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_67_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_77_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_87_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_95_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.492 | TNS=-227.827 |
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_94_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.439 | TNS=-227.721 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_96_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[27]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_13_n_0. Optimizations did not improve timing on the net.
@@ -831,7 +835,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_3
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_40_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_45_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_57_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[28]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_23_n_0. Optimizations did not improve timing on the net.
@@ -840,6 +843,9 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_4
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_63_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_71_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_79_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_90_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.328 | TNS=-222.082 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_86_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_98_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[29]. Optimizations did not improve timing on the net.
@@ -860,9 +866,12 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_4
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_48_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_53_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_58_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_64_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.326 | TNS=-222.078 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
 INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_63_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.223 | TNS=-227.289 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.289 | TNS=-222.004 |
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_62_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[31]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_51_n_0. Optimizations did not improve timing on the net.
@@ -872,23 +881,23 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_1
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_175_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_201_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_233_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_268_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_269_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_61_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_120_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_123_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[4]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][4]_INST_0_i_63_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_66_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[6]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[7]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][7]_INST_0_i_59_n_0. Optimizations did not improve timing on the net.
@@ -899,20 +908,19 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[10]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][2]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_117_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_91_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[13]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_60_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[14]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][6]_INST_0_i_114_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[15]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_55_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[16]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_137_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[17]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][1]_INST_0_i_103_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_56_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[19]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[20]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][4]_INST_0_i_100_n_0. Optimizations did not improve timing on the net.
@@ -923,37 +931,30 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][6]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[23]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][7]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[24]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[25]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_92_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[26]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_96_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[27]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_57_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[28]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_98_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[29]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[30]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_62_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[31]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_268_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_269_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.223 | TNS=-227.289 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1633.516 ; gain = 0.000
-Phase 3 Critical Path Optimization | Checksum: 172b8a066
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.289 | TNS=-222.004 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1644.055 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 197047135
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1633.516 ; gain = 9.059
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1644.055 ; gain = 9.027
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.223 | TNS=-227.289 |
-INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net alu_manual/alu/divider/FSM_sequential_D_states_q_reg[2]. Critical path length was reduced through logic transformation on cell alu_manual/alu/divider/D_current_value_q[2]_i_1_comp.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/io_led[0]_OBUF[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-76.035 | TNS=-226.980 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.289 | TNS=-222.004 |
 INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_18_n_0. Optimizations did not improve timing on the net.
@@ -973,6 +974,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_73_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_88_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_120_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[2]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_18_n_0. Optimizations did not improve timing on the net.
@@ -982,7 +984,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_74_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_89_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_104_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_123_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][3]_INST_0_i_21_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_23_n_0. Optimizations did not improve timing on the net.
@@ -1012,6 +1013,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_49_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_59_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_66_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[6]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][6]_INST_0_i_16_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][6]_INST_0_i_22_n_0. Optimizations did not improve timing on the net.
@@ -1069,7 +1071,8 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_84_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_99_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_105_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_117_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[12]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_26_n_0. Optimizations did not improve timing on the net.
@@ -1079,6 +1082,7 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_69_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_79_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_84_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_91_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[13]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_12_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_22_n_0. Optimizations did not improve timing on the net.
@@ -1108,7 +1112,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_38_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_43_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_48_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_55_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[16]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_17_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_35_n_0. Optimizations did not improve timing on the net.
@@ -1138,7 +1141,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_39_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_44_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_49_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_56_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[19]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][3]_INST_0_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][3]_INST_0_i_23_n_0. Optimizations did not improve timing on the net.
@@ -1197,7 +1199,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_7
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_85_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_97_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_109_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[25]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_24_n_0. Optimizations did not improve timing on the net.
@@ -1207,7 +1208,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_5
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_63_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_70_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_80_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_92_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[26]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_13_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_22_n_0. Optimizations did not improve timing on the net.
@@ -1227,7 +1227,6 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_3
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_40_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_45_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_57_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[28]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_14_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_23_n_0. Optimizations did not improve timing on the net.
@@ -1264,25 +1263,23 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_1
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_175_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_201_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_233_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_268_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
-INFO: [Physopt 32-735] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.923 | TNS=-226.868 |
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_269_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/D_current_value_q[6]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0_n_0_repN. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][0]_INST_0_i_61_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_120_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_123_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][1]_INST_0_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[4]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][4]_INST_0_i_63_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][5]_INST_0_i_66_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[6]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[7]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[0][7]_INST_0_i_59_n_0. Optimizations did not improve timing on the net.
@@ -1293,20 +1290,19 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][1]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[10]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][2]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][3]_INST_0_i_117_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][4]_INST_0_i_91_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[13]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][5]_INST_0_i_60_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[14]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][6]_INST_0_i_114_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[15]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[1][7]_INST_0_i_55_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[16]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][0]_INST_0_i_137_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[17]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][1]_INST_0_i_103_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][2]_INST_0_i_56_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[19]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[20]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][4]_INST_0_i_100_n_0. Optimizations did not improve timing on the net.
@@ -1317,30 +1313,27 @@ INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][6]_INST_0_
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[23]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/io_led[2][7]_INST_0_i_54_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[24]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[0]_inst_i_126_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[25]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[1]_inst_i_92_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[26]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[2]_inst_i_96_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[27]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[3]_inst_i_57_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[28]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[4]_inst_i_98_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[29]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[30]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[6]_inst_i_62_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/d0[31]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_268_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/led_OBUF[7]_inst_i_269_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net alu_manual/alu/divider/D_stage_q_reg[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.923 | TNS=-226.868 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1633.527 ; gain = 0.000
-Phase 4 Critical Path Optimization | Checksum: 172b8a066
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.289 | TNS=-222.004 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1644.055 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 197047135
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1633.527 ; gain = 9.070
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1633.527 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-75.923 | TNS=-226.868 |
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1644.055 ; gain = 9.027
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1644.055 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-75.289 | TNS=-222.004 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -1350,30 +1343,29 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          1.008  |          1.897  |           13  |              0  |                    16  |           0  |           2  |  00:00:05  |
-|  Total          |          1.008  |          1.897  |           13  |              0  |                    16  |           0  |           3  |  00:00:05  |
+|  Critical Path  |          0.791  |          1.582  |           10  |              0  |                    18  |           0  |           2  |  00:00:02  |
+|  Total          |          0.791  |          1.582  |           10  |              0  |                    18  |           0  |           3  |  00:00:02  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1633.527 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 2371c8658
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1644.055 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 3209130a1
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1633.527 ; gain = 9.070
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1644.055 ; gain = 9.027
 INFO: [Common 17-83] Releasing license: Implementation
-903 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+896 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1633.527 ; gain = 19.230
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1642.367 ; gain = 0.035
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1644.270 ; gain = 1.902
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1644.270 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1652.918 ; gain = 0.023
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1654.824 ; gain = 1.906
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.824 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1644.270 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1644.270 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1644.270 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1644.270 ; gain = 1.902
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1654.824 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1654.824 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1654.824 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1654.824 ; gain = 1.906
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/vivado/alu.runs/impl_1/alchitry_top_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -1387,30 +1379,30 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: 49d0ec54 ConstDB: 0 ShapeSum: b619abfb RouteDB: a0815c57
-Post Restoration Checksum: NetGraph: 7bf3d16 | NumContArr: 8283d4d6 | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 20f950726
+Checksum: PlaceDB: df438c4d ConstDB: 0 ShapeSum: b619abfb RouteDB: a0815c57
+Post Restoration Checksum: NetGraph: f88446d0 | NumContArr: a7eacccb | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 325c108d5
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1737.578 ; gain = 82.859
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1749.762 ; gain = 85.891
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 20f950726
+Phase 2.1 Fix Topology Constraints | Checksum: 325c108d5
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1737.578 ; gain = 82.859
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1749.762 ; gain = 85.891
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 20f950726
+Phase 2.2 Pre Route Cleanup | Checksum: 325c108d5
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1737.578 ; gain = 82.859
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1749.762 ; gain = 85.891
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 18a6e19d2
+Phase 2.3 Update Timing | Checksum: 1a9d65cb3
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1769.383 ; gain = 114.664
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-73.592| TNS=-220.405| WHS=-0.091 | THS=-0.753 |
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1782.203 ; gain = 118.332
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-72.961| TNS=-215.697| WHS=-0.076 | THS=-1.008 |
 
 
 Router Utilization Summary
@@ -1419,106 +1411,107 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 3662
+  Number of Failed Nets               = 3661
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 3662
+  Number of Unrouted Nets             = 3661
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 1f57df485
+Phase 2 Router Initialization | Checksum: 24dc64b1d
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1769.383 ; gain = 114.664
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1782.203 ; gain = 118.332
 
 Phase 3 Global Routing
-Phase 3 Global Routing | Checksum: 1f57df485
+Phase 3 Global Routing | Checksum: 24dc64b1d
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1769.383 ; gain = 114.664
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1782.203 ; gain = 118.332
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
-Phase 4.1 Initial Net Routing Pass | Checksum: 17c00e709
+Phase 4.1 Initial Net Routing Pass | Checksum: 2717559e2
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1769.383 ; gain = 114.664
-Phase 4 Initial Routing | Checksum: 17c00e709
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1782.203 ; gain = 118.332
+Phase 4 Initial Routing | Checksum: 2717559e2
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1769.383 ; gain = 114.664
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1782.203 ; gain = 118.332
 
 Phase 5 Rip-up And Reroute
 
 Phase 5.1 Global Iteration 0
- Number of Nodes with overlaps = 1487
- Number of Nodes with overlaps = 445
- Number of Nodes with overlaps = 147
- Number of Nodes with overlaps = 46
- Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 1473
+ Number of Nodes with overlaps = 306
+ Number of Nodes with overlaps = 129
+ Number of Nodes with overlaps = 41
  Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 15
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.706| TNS=-234.410| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.655| TNS=-233.198| WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Global Iteration 0 | Checksum: 2ec4d05d8
+Phase 5.1 Global Iteration 0 | Checksum: 335a671da
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 5.2 Global Iteration 1
- Number of Nodes with overlaps = 309
- Number of Nodes with overlaps = 147
- Number of Nodes with overlaps = 66
- Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 437
+ Number of Nodes with overlaps = 170
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-79.582| TNS=-226.815| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-79.242| TNS=-228.286| WHS=N/A    | THS=N/A    |
 
-Phase 5.2 Global Iteration 1 | Checksum: 330fbe5fd
+Phase 5.2 Global Iteration 1 | Checksum: 2d4e4026a
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
-Phase 5 Rip-up And Reroute | Checksum: 330fbe5fd
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
+Phase 5 Rip-up And Reroute | Checksum: 2d4e4026a
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 29aca73cb
+Phase 6.1.1 Update Timing | Checksum: 2cc345f83
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.706| TNS=-234.410| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.655| TNS=-233.119| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 6.1 Delay CleanUp | Checksum: 2efb6e0ba
+Phase 6.1 Delay CleanUp | Checksum: 216017134
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 6.2 Clock Skew Optimization
-Phase 6.2 Clock Skew Optimization | Checksum: 2efb6e0ba
+Phase 6.2 Clock Skew Optimization | Checksum: 216017134
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
-Phase 6 Delay and Skew Optimization | Checksum: 2efb6e0ba
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
+Phase 6 Delay and Skew Optimization | Checksum: 216017134
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Hold Fix Iter
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.706| TNS=-233.101| WHS=0.177  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-78.655| TNS=-229.909| WHS=0.101  | THS=0.000  |
 
-Phase 7.1 Hold Fix Iter | Checksum: 2d7cd13e9
+Phase 7.1 Hold Fix Iter | Checksum: 25c3418c0
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
-Phase 7 Post Hold Fix | Checksum: 2d7cd13e9
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
+Phase 7 Post Hold Fix | Checksum: 25c3418c0
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 2.16966 %
-  Global Horizontal Routing Utilization  = 2.08706 %
+  Global Vertical Routing Utilization    = 2.18425 %
+  Global Horizontal Routing Utilization  = 2.14055 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1532,10 +1525,10 @@ Router Utilization Summary
 --GLOBAL Congestion:
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 41.4414%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 37.8378%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -1557,51 +1550,51 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 8 Route finalize | Checksum: 2d7cd13e9
+Phase 8 Route finalize | Checksum: 25c3418c0
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 2d7cd13e9
+Phase 9 Verifying routed nets | Checksum: 25c3418c0
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 2f2095752
+Phase 10 Depositing Routes | Checksum: 32e93ae23
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 11 Post Process Routing
-Phase 11 Post Process Routing | Checksum: 2f2095752
+Phase 11 Post Process Routing | Checksum: 32e93ae23
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Phase 12 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-78.706| TNS=-233.101| WHS=0.177  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-78.655| TNS=-229.909| WHS=0.101  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 12 Post Router Timing | Checksum: 2f2095752
+Phase 12 Post Router Timing | Checksum: 32e93ae23
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 151.090
-Total Elapsed time in route_design: 14.602 secs
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 154.574
+Total Elapsed time in route_design: 14.598 secs
 
 Phase 13 Post-Route Event Processing
-Phase 13 Post-Route Event Processing | Checksum: 1935567e4
+Phase 13 Post-Route Event Processing | Checksum: 1bef09be7
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 154.574
 INFO: [Route 35-16] Router Completed Successfully
-Ending Routing Task | Checksum: 1935567e4
+Ending Routing Task | Checksum: 1bef09be7
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 151.090
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 154.574
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-918 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+911 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.809 ; gain = 161.539
+route_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1818.445 ; gain = 163.621
 INFO: [Vivado 12-24828] Executing command : report_drc -file alchitry_top_drc_routed.rpt -pb alchitry_top_drc_routed.pb -rpx alchitry_top_drc_routed.rpx
 Command: report_drc -file alchitry_top_drc_routed.rpt -pb alchitry_top_drc_routed.pb -rpx alchitry_top_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1629,23 +1622,23 @@ Command: report_power -file alchitry_top_power_routed.rpt -pb alchitry_top_power
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-935 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+928 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file alchitry_top_clock_utilization_routed.rpt
 INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file alchitry_top_bus_skew_routed.rpt -pb alchitry_top_bus_skew_routed.pb -rpx alchitry_top_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1855.512 ; gain = 0.055
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1857.902 ; gain = 2.391
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1857.902 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1867.723 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1869.918 ; gain = 2.195
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1869.918 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1857.902 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1857.902 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1857.902 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1857.902 ; gain = 2.391
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1869.918 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1869.918 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1869.918 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1869.918 ; gain = 2.195
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yourmum/Downloads/50002-lab3-alu/Lab3_CI01_Team17/50002-lab3-alu/build/vivado/alu.runs/impl_1/alchitry_top_routed.dcp' has been generated.
 Command: write_bitstream -force alchitry_top.bit -bin_file
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -1662,13 +1655,13 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 12075360 bits.
+Bitstream compression saved 12086656 bits.
 Writing bitstream ./alchitry_top.bit...
 Writing bitstream ./alchitry_top.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-950 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+943 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2367.359 ; gain = 509.457
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 00:18:47 2025...
+write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2360.082 ; gain = 490.164
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 00:34:39 2025...

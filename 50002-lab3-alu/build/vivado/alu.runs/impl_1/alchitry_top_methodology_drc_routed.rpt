@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr  9 00:18:40 2025
+| Date         : Wed Apr  9 00:34:32 2025
 | Host         : PC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file alchitry_top_methodology_drc_routed.rpt -pb alchitry_top_methodology_drc_routed.pb -rpx alchitry_top_methodology_drc_routed.rpx
 | Design       : alchitry_top
@@ -35,27 +35,27 @@ Table of Contents
 -----------------
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -18.947 ns between alu_manual/D_b_value_q_reg[2]/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[3]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -18.455 ns between alu_manual/FSM_sequential_D_states_q_reg[0]_rep__1/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[1]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -18.957 ns between alu_manual/D_b_value_q_reg[2]/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[1]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -18.899 ns between alu_manual/FSM_sequential_D_states_q_reg[0]_rep__1/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[3]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -37.751 ns between alu_manual/FSM_sequential_D_states_q_reg[0]_rep__1/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[0]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -35.198 ns between alu_manual/FSM_sequential_D_states_q_reg[1]_rep__9/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[0]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -78.664 ns between alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[2]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -78.629 ns between alu_manual/D_b_value_q_reg[4]/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[2]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -78.684 ns between alu_manual/FSM_sequential_D_states_q_reg[1]_rep__0/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[6]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -78.633 ns between alu_manual/D_b_value_q_reg[4]/C (clocked by clk_0) and alu_manual/D_current_value_q_reg[6]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

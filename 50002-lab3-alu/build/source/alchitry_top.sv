@@ -17,12 +17,12 @@ module alchitry_top (
         input wire [2:0][7:0] io_dip
     );
     logic rst;
-    localparam _MP_STAGES_140011100 = 3'h4;
+    localparam _MP_STAGES_465181557 = 3'h4;
     logic M_reset_cond_in;
     logic M_reset_cond_out;
     
     reset_conditioner #(
-        .STAGES(_MP_STAGES_140011100)
+        .STAGES(_MP_STAGES_465181557)
     ) reset_cond (
         .clk(clk),
         .in(M_reset_cond_in),
